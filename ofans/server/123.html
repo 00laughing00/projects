@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src='js/jquery-3.2.1.js'>
+			
+		</script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		 $.ajax({
+			type:"post",
+			url:"http://127.0.0.1:3000/reg",
+			data:{'name':'小于','password':123},
+			success:function(datas){
+				
+				console.log(datas)
+			}
+		});
+	</script>
+	</body>
+</html>
